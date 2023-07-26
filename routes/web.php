@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Backend\AboutController;
+use App\Http\Controllers\Backend\ContactController;
 use App\Http\Controllers\Backend\CourseController;
 use App\Http\Controllers\Backend\FeatureController;
 use App\Http\Controllers\Backend\LogoController;
@@ -135,6 +136,15 @@ Route::middleware('auth')->group(function () {
     Route::put('/update/{id}', [TestimonialController::class, 'update'])->name('testimonial.update');
     Route::put('/store', [TestimonialController::class, 'store'])->name('testimonial.store');
     Route::delete('/delete/{id}', [TestimonialController::class, 'destroy'])->name('testimonial.delete');
+    });
+    // tcontact
+    Route::prefix('contact')->group(function () {
+    Route::get('/view', [ContactController::class, 'index'])->name('contact.view');
+    Route::get('/add', [ContactController::class, 'create'])->name('contact.add');
+    Route::get('/edit/{id}', [ContactController::class, 'edit'])->name('contact.edit');
+    Route::put('/update/{id}', [ContactController::class, 'update'])->name('contact.update');
+    Route::put('/store', [ContactController::class, 'store'])->name('contact.store');
+    Route::delete('/delete/{id}', [ContactController::class, 'destroy'])->name('contact.delete');
     });
 
 });

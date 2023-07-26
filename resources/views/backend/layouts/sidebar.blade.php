@@ -76,8 +76,8 @@ $route = Route::current()->getName();
 
                 </li>
 
-                <li class="nav-item {{ $prefix == '/about' || $prefix == '/features' || $prefix == '/videos' || $prefix == '/services' || $prefix == '/portfolios'  || $prefix == '/courses' || $prefix == '/logo' || $prefix == '/slider' || $prefix == '/testimonial'? 'menu-open' : '' }}">
-                    <a href="#" class="nav-link {{ $prefix == '/about' || $prefix == '/features' || $prefix == '/videos' || $prefix == '/services' || $prefix == '/portfolios'  || $prefix == '/courses' || $prefix == '/logo' || $prefix == '/slider' || $prefix == '/testimonial' ? 'active' : '' }}">
+                <li class="nav-item {{ $prefix == '/about' || $prefix == '/features' || $prefix == '/videos' || $prefix == '/services' || $prefix == '/portfolios'  || $prefix == '/courses' || $prefix == '/logo' || $prefix == '/slider' || $prefix == '/testimonial' || $prefix == '/contact'? 'menu-open' : '' }}">
+                    <a href="#" class="nav-link {{ $prefix == '/about' || $prefix == '/features' || $prefix == '/videos' || $prefix == '/services' || $prefix == '/portfolios'  || $prefix == '/courses' || $prefix == '/logo' || $prefix == '/slider' || $prefix == '/testimonial' || $prefix == '/contact' ? 'active' : '' }}">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
                             Setup
@@ -144,6 +144,12 @@ $route = Route::current()->getName();
                             <a href="{{ route('testimonial.view') }}" class="nav-link {{ $prefix == '/testimonial' ? 'active' : '' }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Testimonial</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('contact.view') }}" class="nav-link {{ $prefix == '/contact' ? 'active' : '' }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Contact Us</p>
                             </a>
                         </li>
                     </ul>

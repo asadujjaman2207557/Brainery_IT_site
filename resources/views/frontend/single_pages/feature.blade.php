@@ -88,26 +88,9 @@
                             </div>  --}}
                             <h5>{{ $all_data[0]->tab3_title }}</h5>
                             <p class="quia">{{ $all_data[0]->tab3_text }}</p>
-                            {{--  <div class="process">
-                                <div class="row" data-cues="fadeIn" data-duration="1000">
-                                    <div class="col-lg-6">
-                                        <img class="process-1" src="{{ asset('public') }}/images/blog/blog-2.jpg" alt="image">
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <img class="process-1" src="{{ asset('public') }}/images/blog/blog-1.jpg" alt="image">
-                                    </div>
-                                </div>
-                                <h5>Why Choose Our Services ?</h5>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                    laudan tiumt otam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                                    architecto beatae vitae dictasu nt explicabo. Nemo enim ipsam voluptatem quia
-                                    voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
-                                    qui ration.</p>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                    laudan tiumt otam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                                    architecto beatae vitae dictasu nt explicabo. Nemo enim ipsam voluptatem quia
-                                    voluptas sit aspernatur aut.</p>
-                            </div>  --}}
+                            @if ($currentRoute == 'course')
+                                <a class="common-btn" href="#">Contact Us</a>
+                            @endif
                         </div>
                     </div>
                 </div>
