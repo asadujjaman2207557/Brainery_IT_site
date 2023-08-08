@@ -31,7 +31,7 @@ class HomeController extends Controller
         $data['p_cards'] = Featur_cards::where('subtitle','portfolio')->get();
         $data['contact'] = Cotact::first();
         //dd($data);
-        return view('Frontend.layouts.welcome', $data);
+        return view('frontend.layouts.welcome', $data);
     }
     public function about()
     {
@@ -41,7 +41,7 @@ class HomeController extends Controller
         $data['contact'] = Cotact::first();
         $data['s5_cards'] = Featur_cards::where('subtitle','service')->take(5)->get();
 
-        return view('Frontend.single_pages.about_us', $data);
+        return view('frontend.single_pages.about_us', $data);
     }
     public function feature($title)
     {
@@ -50,7 +50,7 @@ class HomeController extends Controller
         $data['contact'] = Cotact::first();
         $data['s5_cards'] = Featur_cards::where('subtitle','service')->take(5)->get();
        // dd($data);
-        return view('Frontend.single_pages.feature', $data);
+        return view('frontend.single_pages.feature', $data);
     }
     public function service($title)
     {
@@ -60,7 +60,7 @@ class HomeController extends Controller
         $data['contact'] = Cotact::first();
         $data['s5_cards'] = Featur_cards::where('subtitle','service')->take(5)->get();
        // dd($data);
-        return view('Frontend.single_pages.feature', $data);
+        return view('frontend.single_pages.feature', $data);
     }
     public function portfolio($title)
     {
@@ -70,7 +70,7 @@ class HomeController extends Controller
         $data['contact'] = Cotact::first();
         $data['s5_cards'] = Featur_cards::where('subtitle','service')->take(5)->get();
        // dd($data);
-        return view('Frontend.single_pages.feature', $data);
+        return view('frontend.single_pages.feature', $data);
     }
 
     public function course($title)
@@ -82,6 +82,6 @@ class HomeController extends Controller
         $data['contact'] = Cotact::first();
         $data['s5_cards'] = Featur_cards::where('subtitle','service')->take(5)->get();
        // dd($data);
-        return view('Frontend.single_pages.feature', $data);
+        return view('frontend.single_pages.feature', $data);
     }
 }

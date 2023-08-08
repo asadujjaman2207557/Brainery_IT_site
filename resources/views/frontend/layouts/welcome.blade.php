@@ -266,60 +266,60 @@
 
 
     {{--  navbar  --}}
-    @include('Frontend.layouts.navbar')
+    @include('frontend.layouts.navbar')
 
 
     {{--  slider  --}}
-    @include('Frontend.layouts.sections.carousel')
+    @include('frontend.layouts.sections.carousel')
 
     {{--  our Features  --}}
-    @include('Frontend.layouts.sections.features')
+    @include('frontend.layouts.sections.features')
 
     {{--  aboutus  --}}
-    @include('Frontend.layouts.sections.aboutus')
+    @include('frontend.layouts.sections.aboutus')
 
 
     {{--  services  --}}
-    @include('Frontend.layouts.sections.services')
+    @include('frontend.layouts.sections.services')
 
     {{--  cources  --}}
-    @include('Frontend.layouts.sections.courses')
+    @include('frontend.layouts.sections.courses')
 
     {{--  video_count  --}}
-    @include('Frontend.layouts.sections.video_count')
+    @include('frontend.layouts.sections.video_count')
 
 
 
     {{--  weare  --}}
-    {{--  @include('Frontend.layouts.sections.weare')  --}}
+    {{--  @include('frontend.layouts.sections.weare')  --}}
 
     {{--  portfolio  --}}
-    @include('Frontend.layouts.sections.portfolio')
+    @include('frontend.layouts.sections.portfolio')
 
 
     {{--  pricing  --}}
-    @include('Frontend.layouts.sections.pricing')
+    @include('frontend.layouts.sections.pricing')
 
 
     {{--  testimonial  --}}
-    @include('Frontend.layouts.sections.testimonial')
+    @include('frontend.layouts.sections.testimonial')
 
 
 
     {{--  clients  --}}
-    {{--  @include('Frontend.layouts.sections.clients')  --}}
+    {{--  @include('frontend.layouts.sections.clients')  --}}
 
 
     {{--  blogs  --}}
-    {{--  @include('Frontend.layouts.sections.blogs')  --}}
+    {{--  @include('frontend.layouts.sections.blogs')  --}}
 
 
-    {{--  newsletter  --}}
-    @include('Frontend.layouts.sections.newsletter')
+    {{--  newsletter  
+    @include('frontend.layouts.sections.newsletter')--}}
 
 
     {{--  footer  --}}
-    @include('Frontend.layouts.footer')
+    @include('frontend.layouts.footer')
 
 
 
